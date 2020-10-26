@@ -41,7 +41,8 @@ merges information about the documents with the information about the sources fr
 
 Instruction for usage
 	
-	NOTE! Most of the files used for running the code are available for Scopus registered users only and are due to copyright issues not available on GitHub.
+	NOTE! Most of the files used for running the code are available for Scopus registered users
+	only and are due to copyright issues not available on GitHub.
     
     	However, for registered Scopus users the detailed information how to get the data is provided.
 	
