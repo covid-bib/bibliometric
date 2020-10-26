@@ -5,29 +5,36 @@ Script get_queries_from_scopus_eid.py helps you collect data for more than 2.000
 
 Instruction for usage
     
-    If your Scopus query results in more than 2.000 documents, you can select first 20.000 documents and export citation information only (you get link to download file named scopus.csv by email).
-	
-	Use downloaded file for the script in order to collect other information (bibliographic information, abstract & keywords, funding details and other information).
-    The script takes scopus.scv file as input and creates queries in Scopus Advanced syntax format which can be directly copied to search engine to  obtain chunks of documents with less than 2000 documents.
+    If your Scopus query results in more than 2.000 documents, you can select first 20.000 documents and export citation 
+    information only (you get link to download file named scopus.csv by email).
+    
+    Use downloaded file for the script in order to collect other information (bibliographic information, abstract & keywords, 
+    funding details and other information).
+    
+    The script takes scopus.scv file as input and creates queries in Scopus Advanced syntax format which can be directly
+    copied to search engine to obtain chunks of documents with less than 2000 documents.
+    
     The search results are saved to queries.csv (copy-paste information from each row).
     
-    By default, 2.000 (maximal number of documents that can be extracted)  documents are selected (by their unique identifier EID).
+    By default, 2.000 (maximal number of documents that can be extracted)
+    documents are selected (by their unique identifier EID).
     
     Partial data csv can be merged to one file using script merge_from_scopus_csv.py
-	
-	Note: if your search query results in more than 20.000 documents, we advise	that you split the results into smaller chunks directly in Scopus.
+    
+    Note: if your search query results in more than 20.000 documents, 
+    we advise that you split the results into smaller chunks directly in Scopus.
 	
 Script merge_from_scopus_csv.py
 merges document information from several small csv file to a single one (and also in xlsx format)
 
 Instructions for usage
-
+	
 	Rename smaller smaller csv files from Scopus in the following format
 	scopus (0).csv, scopus (1).csv ...
 	
 	Use the main function merge_partial_files to merged them. 
 	The parameter n_max corresponds to the number of csv files to be merged.
-	
+
 	
 Script add_sciences_to_scopus.py
 merges information about the documents with the information about the sources from which these documents originate
@@ -36,7 +43,7 @@ Instruction for usage
 	
 	NOTE! Most of the files used for running the code are available for Scopus registered users only and are due to copyright issues not available on GitHub.
     
-    However, for registered Scopus users the detailed information how to get the data is provided.
+    	However, for registered Scopus users the detailed information how to get the data is provided.
 	
 	In order to run the code three files have to be provided by user:
 	
@@ -44,7 +51,8 @@ Instruction for usage
 		File that contains bibliographic properties of documents from Scopus (for Scopus registered users only)
 		fn_document shoud be in Excel format (in case, you have it in csv format, we suggest to convert in in pandas)
 		The file contains bibliographic properties of documents from Scopus. It can be directly downloaded from Scopus.
-		In case, that the search query results in more than 2.000 documents, we recommend using the get_queries_from_scopus_eid.py script
+		In case, that the search query results in more than 2.000 documents, 
+		we recommend using the get_queries_from_scopus_eid.py script
 	
 	fn_sources: 
 		File that contains source titles and metrics (for Scopus registered users only)
@@ -66,6 +74,7 @@ Script jaccard_sac.py plots clustermap of Subject are classifications based on J
 Instruction for usage
 		
 		Run the code with the provided file binary_sac.xlsx
-		The file binary_sac.xlsx is computed from Scopus document dataset where each row represents a document and each column a Subject area classification.
+		The file binary_sac.xlsx is computed from Scopus document dataset 
+		where each row represents a document and each column a Subject area classification.
 		The value 1 indicates that a document is classified to a particular SAC, and 0 otherwise.
 		The original information about the documents from Scopus are removed from the xlsx file due to copyright issues.
