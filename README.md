@@ -74,8 +74,20 @@ Script jaccard_sac.py plots clustermap of Subject are classifications based on J
 
 Instruction for usage
 		
-		Run the code with the provided file binary_sac.xlsx
-		The file binary_sac.xlsx is computed from Scopus document dataset 
-		where each row represents a document and each column a Subject area classification.
-		The value 1 indicates that a document is classified to a particular SAC, and 0 otherwise.
-		The original information about the documents from Scopus are removed from the xlsx file due to copyright issues.
+	Run the code with the provided file binary_sac.xlsx
+	The file binary_sac.xlsx is computed from Scopus document dataset 
+	where each row represents a document and each column a Subject area classification.
+	The value 1 indicates that a document is classified to a particular SAC, and 0 otherwise.
+	The original information about the documents from Scopus are removed from the xlsx file due to copyright issues.
+		
+		
+Script plot_venn_diagram.py
+plots Venn's diagram showing overlaping between different subject areas
+
+Instructions for usage
+	
+	Run the code with the provided file binary_subject_areas.xlsx
+	The file binary_subject_areas.xlsx is computed from Scopus document dataset 
+	where each row represents a document and each column a Subject area.
+	The value 1 indicates that a document is classified to a particular Subject area, and 0 otherwise.
+	The original information about the documents from Scopus are removed from the xlsx file due to copyright issues.
