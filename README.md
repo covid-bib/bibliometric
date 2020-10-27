@@ -91,3 +91,20 @@ Instructions for usage
 	where each row represents a document and each column a Subject area.
 	The value 1 indicates that a document is classified to a particular Subject area, and 0 otherwise.
 	The original information about the documents from Scopus are removed from the xlsx file due to copyright issues.
+	
+Script text_mining.py
+uses abstracts of documents and converts them to TF-IDF features. 
+Besides the abstract Subject area membership has to be provided.
+The script coverts the dataset with abstract to a dataset which can be used for classification purposes
+
+Instructions for usage
+
+	Use Abstract information from Scopus document dataset and add membership of Subject area (0 or 1).
+	For adding membership information see documnetation of add_sciences_to_scopus.py
+	The script uses additional stopwords stored in additional_stop_words.txt (on GitHub)
+	The text processing procedure follows: https://github.com/miguelfzafra/Latest-News-Classifier/blob/master/0.%20Latest%20News%20Classifier/03.%20Feature%20Engineering/03.%20Feature%20Engineering.ipynb
+	The script returns dataset which can be further used for classification.
+	
+	NOTE! The original information about the abstracts is not available on GitHub due to Scopus copyright issues.
+	However, output of the code is available in dataset_for_classification.xlsx
+	
